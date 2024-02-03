@@ -1,7 +1,7 @@
 import React from "react";
 
-const Weather = ({ weatherData }) => {
-  console.log(weatherData);
+const Weather = ({ weatherData}) => {
+  // console.log(timeZoneData.timeZone.toFixed());
   return (
     <div>
       {weatherData.weather ? (
@@ -21,6 +21,12 @@ const Weather = ({ weatherData }) => {
                   <h1 className="text-6xl font-semibold">
                     {weatherData.main.temp.toFixed()} °C
                   </h1>
+                  <div className="flex justify-between gap-x-8">
+                  <p>location</p>
+                  <p className="font-bold w-20">
+                    {/* {timeZoneData.timeZone} */}
+                  </p>
+                </div>
                 </div>
               </div>
             </div>
